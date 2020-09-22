@@ -23,6 +23,31 @@ namespace U00_WpfLayout.WpfApp
         public MainWindow()
         {
             InitializeComponent();
+
+            btnStackPanel.Click += BtnStackPanel_Click;
+            btnDock.Click += BtnDock_Click;
+            btnGrid.Click += BtnGrid_Click;
+            btnGridSplitter.Click += BtnGridSplitter_Click;
+        }
+
+        private void BtnGridSplitter_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnGrid_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnDock_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnStackPanel_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
