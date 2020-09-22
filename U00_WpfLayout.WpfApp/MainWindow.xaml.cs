@@ -32,7 +32,7 @@ namespace U00_WpfLayout.WpfApp
 
         private void BtnGridSplitter_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            bool test;
         }
 
         private void BtnGrid_Click(object sender, RoutedEventArgs e)
