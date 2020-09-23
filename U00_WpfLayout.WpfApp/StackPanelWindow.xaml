@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:U00_WpfLayout.WpfApp"
         mc:Ignorable="d"
-        Title="StackPanelWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="StackPanelWindow" Height="100" Width="200" MinHeight="100" MinWidth="200">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock MinWidth="50" Margin="0,0,10,0" Text="Feld 1"></TextBlock>
+            <TextBox MinWidth="100" Text="1"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock MinWidth="50" Margin="0,0,10,0" Text="Feld 2"></TextBlock>
+            <TextBox MinWidth="100" Text="2"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock MinWidth="50" Margin="0,0,10,0" Text="Feld 3"></TextBlock>
+            <TextBox MinWidth="100" Text="3"/>
+        </StackPanel>
+    </StackPanel>
 </Window>

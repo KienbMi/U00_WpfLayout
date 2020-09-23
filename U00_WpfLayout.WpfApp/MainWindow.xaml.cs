@@ -32,22 +32,26 @@ namespace U00_WpfLayout.WpfApp
 
         private void BtnGridSplitter_Click(object sender, RoutedEventArgs e)
         {
-            bool test;
+            GridSplitter gridSplitter = new GridSplitter();
+            gridSplitter.ShowDialog();
         }
 
         private void BtnGrid_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            GridWindow gridWindow = new GridWindow();
+            gridWindow.ShowDialog();
         }
 
         private void BtnDock_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DockWindow dockWindow = new DockWindow();
+            dockWindow.ShowDialog();
         }
 
         private void BtnStackPanel_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            StackPanelWindow stackPanelWindow = new StackPanelWindow();
+            stackPanelWindow.ShowDialog();
         }
     }
 }

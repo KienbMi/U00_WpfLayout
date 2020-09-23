@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:U00_WpfLayout.WpfApp"
         mc:Ignorable="d"
-        Title="GridWindow" Height="450" Width="800">
+        Title="GridWindow" Height="300" Width="300">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Content ="Button 1"/>
+        <Button Grid.Column="1" Grid.Row="0" Content ="Button 5"/>
+        <Button Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" Content ="Button 5"/>
+        <Button Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Content ="Button 2"/>
+        <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2" Content="Button 3"/>
+        <Button Grid.Column="3" Grid.Row="2" Content="Button 3"/>
+        <Button Grid.Column="3" Grid.Row="3" Content="Button 4"/>
     </Grid>
 </Window>

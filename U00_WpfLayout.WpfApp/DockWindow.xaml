@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:U00_WpfLayout.WpfApp"
         mc:Ignorable="d"
-        Title="DockWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="DockWindow" Height="280" Width="280">
+    <DockPanel>
+        <Button Content="Top 1" DockPanel.Dock="Top"></Button>
+        <Button Content="Bottom 1" DockPanel.Dock="Bottom"/>
+        <Button Content="Bottom 2" DockPanel.Dock="Bottom"/>
+        <Button Content="Left" DockPanel.Dock="Left"/>
+        <Button Content="Right 1" DockPanel.Dock="Right"/>
+        <Button Content="Top 2" DockPanel.Dock="Top"/>
+        <Button Content="Right 2" DockPanel.Dock="Right"/>
+        <Button Content="Center"/>
+    </DockPanel>
 </Window>

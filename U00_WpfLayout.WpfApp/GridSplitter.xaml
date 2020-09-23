@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:U00_WpfLayout.WpfApp"
         mc:Ignorable="d"
-        Title="GridSplitter" Height="450" Width="800">
+        Title="GridSplitter" Height="300" Width="300">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Content="Button 1"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="Button 2"/>
+        <GridSplitter Grid.Column="0" Grid.RowSpan="2" Width="10"></GridSplitter>
+
     </Grid>
 </Window>
